@@ -1,15 +1,34 @@
 <!doctype html>
 <html>
 <head>
+  <meta charset="uft-8">
 <title>Boseong's web</title>
-<meta charset="uft-8">
 <style>
+body{
+  margin:0;
+}
 a {
-  color: black;
+  color:black;
   text-decoration: none;
 }
+#active{
+  color:red;
+}
+.saw {
+  color:grey;
+}
 h1 {
-  font-size:40px; text-align: center;
+   font-size:40px;
+   text-align: center;
+   border-bottom:1px solid gray;
+   margin:0;
+   padding:20px;
+}
+ol{
+  border-right:1px solid gray;
+  width:100px;
+  margin:0;
+  padding: 20px;
 }
 </style>
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -23,9 +42,9 @@ h1 {
 </script>
 </head>
 <body>
-  <h1><a href="index.html">Welcome</font></h1>
+  <h1><a href="index.html" class="saw">Welcome</font></h1>
 <ol>
-  <li> <a href="1.html">Introduce</font></a></li>
+  <li> <a href="1.html" class="saw" id="active">Introduce</font></a></li>
   <li> <a href="2.html" >Interest</font></a></li>
   <li> <a href="3.html">Future plan</font></a></li>
 </ol>
