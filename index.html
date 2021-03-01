@@ -14,11 +14,9 @@ a {
 #active{
   color:red;
 }
-.saw {
-  color:grey;
-}
+
 h1 {
-   font-size:40px;
+   font-size: 45px;
    text-align: center;
    border-bottom:1px solid gray;
    margin:0;
@@ -30,73 +28,32 @@ ol{
   margin:0;
   padding: 20px;
 }
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid ol{
+     padding-left:33px;
+   }
+#grid #article{
+     padding-left:25px;
+   }
 </style>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LT75V23X7S"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-LT75V23X7S');
-</script>
 </head>
 <body>
-  <h1><a href="index.html" class="saw">Welcome</font></h1>
-<ol>
-  <li> <a href="1.html" class="saw" id="active">Introduce</font></a></li>
-  <li> <a href="2.html" >Interest</font></a></li>
-  <li> <a href="3.html">Future plan</font></a></li>
-</ol>
-  <!--
-  <h1><a href="index.html"><font color="red">Welcome</font></h1>
-<ol>
-  <li> <a href="1.html"><font color="red">Introduce</font></a></li>
-  <li> <a href="2.html"><font color="red">Interest</font></a></li>
-  <li> <a href="3.html"><font color="red">Future plan</font></a></li>
-</ol>
--->
-<h2>Welcome</h2>
-<p>
-  Welcome to my website.
-<p>
-  This webpage is made by Boseong who self taught HTML.<br>It might looks damaged web site but this is all I've taught so far.<br> Who knows I can be a developer!
-</p>
-<p>
-  <div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://malaysia-trip.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</p>
-<p>
-  <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/602cc6549c4f165d47c411cf/1eunedfdh';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-</p>
+  <h1><a href="index.html">Welcome</a></h1>
+  <div id="grid">
+    <ol>
+      <li> <a href="1.html">Introduce</a></li>
+      <li> <a href="2.html">Interest</a></li>
+      <li> <a href="3.html">Future plan</a></li>
+    </ol>
+    <div id="article">
+     <h2>Welcome</h2>
+     <p>
+       Welcomt to my web page!
+     </p>
+    </div>
+  </div>
 </body>
 </html>
